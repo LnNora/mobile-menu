@@ -1,0 +1,164 @@
+html{
+  height: 100%;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background-color: #ecf0c2;
+}
+/*--未展开时的样式开始--*/
+.paper{
+  height: 100%;
+}
+
+.item{
+ height: 20%;
+ overflow: hidden;
+ transition: all 200ms;
+}
+
+.outside{
+  display: flex;
+  align-items: center;
+  margin: 10% 2.1rem;
+  transition:all 200ms;
+}
+
+/*未展开时的样式结束*/
+
+/*展开后的样式开始*/
+.outside2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+   transition:all 200ms;
+}
+/*展开后的样式结束*/
+
+.bar{
+   background-color: #eaeec0;
+   color:#af9a50;
+   position: relative;
+   padding:2rem 2rem 1rem 2rem;
+}
+.menu{
+  display: flex;
+  align-items: center;
+ 
+}
+
+.nav{
+  margin-right: 1rem;
+}
+.menu span{
+  display: block;
+  width:13px;
+  height: 1.5px;
+  margin-bottom: 4px;
+  background-color: #af9a50;
+}
+
+.action{
+  position: absolute;
+  right: 0;
+  bottom: 1rem;
+  margin-right: 2rem;
+  opacity: 0;
+}
+
+
+
+.coffee{
+  background-color: #f2d367;
+  color: #e07556;
+  }
+.sweet{
+  background-color: #f3825f;
+  color: #9c3c54;
+}
+.food{
+  background-color: #a03e58;
+  color: #412445;
+}
+.drink{
+  background-color: #523259;
+  color: #1c214b;
+}
+
+.item-icon{
+  width: 4rem;
+  height:4rem;
+  background-size: contain;
+}
+.item-icon.coffee{
+  width: 4rem;
+  height:4rem;
+  background-image: url('../images/coffee2.png');
+
+}
+
+.item-icon.sweet{
+ 
+  background-image: url('../images/sweet.png');
+
+}
+
+.item-icon.food{
+  
+  background-image: url('../images/food.png');
+  
+}
+
+.item-icon.drink{
+  
+  background-image: url('../images/drink.png');
+
+}
+.outside p{
+  font-size: 1.5rem;
+  line-height: 0;
+  margin-left: 1rem;
+}
+.detail{
+  margin-top: 3rem;
+}
+.child-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  margin: 0 2rem;
+  padding-bottom: 0.8rem;
+}
+.child-item p{
+  margin:0;}
+.counter{
+  display: flex;
+}
+.plus,.minus{
+  border: solid 1px #fff2be;
+  background-color: #fff2be;
+  margin-left:0.2rem;
+  width: 2rem;
+  text-align: center;
+}
+
+.plus{
+  border-radius: 0 5rem 5rem 0; 
+}
+.minus{
+  border-radius: 5rem 0 0 5rem;
+    margin-left:1rem;
+}
+
+.item,.bar{
+ box-shadow: 0px 0px 25px rgba(0,0,0,0.2);
+}
+
+.item{
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}

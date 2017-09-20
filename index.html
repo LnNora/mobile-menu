@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>menu</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- Menu App Interface
+<!-- Based on a Dribbble shot
+<!-- that caught my eye 
+<!-- http://drbl.in/pWyx
+    <!-- ---------------------------------- -->
+
+    <div class="paper preview-1">
+
+        <div class="bar">
+            <div class="menu">
+                <div class="nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <p>Menu</p>
+            </div> 
+
+            <span><span class="items-total">0</span> Items</span>
+            <div class="action">Done</div>
+        </div>
+        <div class="item coffee" data-index="0">
+            <div class="box" data-index="0">
+                <div class="outside mark" data-index="0">
+                    <div class="item-icon coffee" data-index="0"></div>
+                    <p data-index="0">Coffee</p>
+                </div>
+                <div class="detail" data-index="0">
+                    <div class="child-item" data-index="0">
+                        <p data-index="0">Espresso</p>
+                        <div class="counter">
+                            <span class="number" data-index="0" data-num="0">0</span>
+                            <div class="minus" data-num="0">-</div>
+                            <div class="plus" data-num="0">+</div>
+                        </div>
+                    </div>
+                    <div class="child-item">
+                        <p data-index="0">Cappuccino</p>
+                        <div class="counter">
+                            <span class="number" data-index="0" data-num="1">0</span>
+                            <div class="minus" data-num="1">-</div>
+                            <div class="plus" data-num="1">+</div>
+                        </div>
+                    </div>
+                    <div class="child-item" data-index="0">
+                        <p data-index="0">Lato</p>
+                        <div class="counter">
+                            <span class="number" data-index="0" data-num="2">0</span>
+                            <div class="minus" data-num="2">-</div>
+                            <div class="plus" data-num="2">+</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="item sweet" data-index="1">
+            <div class="box" data-index="1">
+             <div class="outside mark" data-index="1">
+                <div class="item-icon sweet" data-index="1"></div>
+                <p data-index="1">Sweet </p>
+            </div>
+            <div class="detail"  data-index="1">
+                <div class="child-item"  data-index="1">
+                    <p  data-index="1">Baklava</p>
+                    <div class="counter">
+                        <span class="number"  data-index="1">0</span>
+                        <div class="minus">-</div>
+                        <div class="plus">+</div>
+
+                    </div>
+                </div>
+                <div class="child-item"  data-index="1">
+                    <p  data-index="1">Kunafeh Nabulsia</p>
+                    <div class="counter">
+                        <span class="number"  data-index="1">0</span>
+                        <div class="minus">-</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+                <div class="child-item"  data-index="1">
+                    <p  data-index="1">Basbousa</p>
+                    <div class="counter">
+                        <span class="number"  data-index="1">0</span>
+                        <div class="minus">-</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item food" data-index="2">
+        <div class="box" data-index="2">
+            <div class="outside mark" data-index="2">
+                <div class="item-icon food" data-index="2"></div>
+                <p data-index="2">Food</p>
+            </div>
+            <div class="detail">
+                <div class="child-item">
+                    <p>Shawarma</p>
+                    <div class="counter">
+                        <span class="number">0</span>
+                        <div class="minus">-</div>
+                        <div class="plus">+</div>
+
+                    </div>
+                </div>
+                <div class="child-item">
+                    <p>Foul Mudammes</p>
+                    <div class="counter">
+                        <span class="number">0</span>
+                        <div class="minus">-</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+                <div class="child-item">
+                    <p>Falafel</p>
+                    <div class="counter">
+                        <span class="number">0</span>
+                        <div class="minus">-</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="item drink" data-index="3">
+        <div class="box" data-index="3">
+            <div class="outside mark" data-index="3">
+                <div class="item-icon drink"  data-index="3"></div>
+                <p  data-index="3">Drink</p>
+            </div>
+            <div class="detail">
+                <div class="child-item">
+                    <p>Tamer Hindi</p>
+                    <div class="counter">
+                        <span class="number">0</span>
+                        <div class="minus">-</div>
+                        <div class="plus">+</div>
+
+                    </div>
+                </div>
+                <div class="child-item">
+                    <p>Jalab</p>
+                    <div class="counter">
+                        <span class="number">0</span>
+                        <div class="minus">-</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+
+    var items = document.getElementsByClassName("item");
+    var marks = document.getElementsByClassName("mark");
+    var items_length = items.length;
+    var marks_length = marks.length;
+    for(var i=0;i<items_length;i++){
+        document.getElementsByClassName("item")[i].addEventListener('click',item,false);
+    }
+    
+    function item(event){
+        var x = event.target;
+        var i = x.dataset.index;
+        /*获取点击事件的那个.item*/
+        var item = document.getElementsByClassName("item")[i];
+        /*获取点击事件的那个.mark而不是.outside，下面的判断中要替换outside类来达到改变样式的效果*/
+        var mark = document.getElementsByClassName('mark')[i];
+        /*获取类名为.mark元素的class属性值*/
+        var classVal = mark.getAttribute("class");
+        /*如果该元素不包含unfold类*/
+        if(classVal.indexOf("unfold")<0){
+            /*其他元素全部替换outside样式，改变item样式，删除unfold，达到收起的效果*/
+            for(var j=0;j<marks_length;j++){
+             var otherVal = marks[j].getAttribute("class");
+             otherVal = otherVal.replace('outside2','outside');
+             marks[j].setAttribute("class",otherVal);
+             otherVal = otherVal.replace(" unfold","");
+             marks[j].setAttribute("class",otherVal);
+             items[j].style.height = "10%";
+             items[j].style.overflow = "hidden";
+             marks[j].style.margin = "0 2rem";
+         }
+
+         /*将outside类替换为outside2类*/
+         classVal = classVal.replace('outside','outside2');
+         mark.setAttribute("class",classVal);
+         /*加上unfold类*/
+         classVal = classVal.concat(" unfold");
+         mark.setAttribute("class",classVal);
+         /*改变item的css样式，使之达到展开的效果*/
+         item.style.height = "60%";
+         item.style.display = "visible";
+
+
+     }else{
+        classVal = classVal.replace('outside2','outside');
+        mark.setAttribute("class",classVal);
+        classVal = classVal.replace(" unfold","");
+        mark.setAttribute("class",classVal);
+        item.style.height = "20%";
+        item.style.overflow = "hidden";
+        /*全部元素的样式恢复到原来的样子*/
+        for(var j=0;j<marks_length;j++){
+           items[j].style.height = "20%";
+           marks[j].style.margin = "10% 2.1rem";
+       }
+
+   }
+
+}
+
+
+
+/*计算*/
+
+var minuses = document.getElementsByClassName("minus");
+var pluses = document.getElementsByClassName("plus");
+var numbers = document.getElementsByClassName("number");
+var totalAmount = document.getElementsByClassName("items-total")[0];
+var minuses_length = minuses.length;
+var pluses_length = pluses.length;
+var numbers_length = numbers.length;
+function sub(event){
+     
+    var x = event.target;
+    var i = x.dataset.num;
+    var minu = minuses[i];
+    var plus = pluses[i];
+    var number = parseInt(numbers[i].innerHTML); 
+    if(number>0){
+    number--; 
+    numbers[i].innerHTML=number;
+    var total = parseInt(totalAmount.innerHTML);
+    total--;
+    totalAmount.innerHTML=total;
+}
+
+}
+
+function add(event){
+    document.getElementsByClassName("action")[0].style.opacity="1";
+    var x = event.target;
+    var i = x.dataset.num;
+    var minu = minuses[i];
+    var plus = pluses[i];
+    var number = parseInt(numbers[i].innerHTML); 
+    number++; 
+    numbers[i].innerHTML=number;
+    var total = parseInt(totalAmount.innerHTML);
+    total++;
+    totalAmount.innerHTML=total;
+}
+
+
+for(var i=0;i<minuses_length;i++){
+    minuses[i].addEventListener('click',sub,false);
+}
+
+for(var i=0;i<pluses_length;i++){
+    pluses[i].addEventListener('click',add,false);
+}
+
+</script>
+</body>
+</html>
